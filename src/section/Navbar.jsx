@@ -1,6 +1,8 @@
 
+import { AnimatePresence } from 'motion/react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from "motion/react"
 
 
 
@@ -39,10 +41,17 @@ export default function Navbar() {
             <Navigation></Navigation>
           </nav>
         </div>
-        {isOpen && (<div className='block overflow-hidden text-center sm:hidden'>
-            <Navigation></Navigation>
-        </div>)}
       </div>
+          {open ? (<motion.div exit={{ opacity: 0 }}  className='block overflow-hidden text-center sm:hidden'
+          initial={{opacity:0, x: -10}}
+          animate={{opacity:1, x:0}}
+          style={{maxHeight: '100vh'}}
+          transition={{duration: 1}}
+          >
+            <nav className='pb-5'>
+              <Navigation></Navigation>
+            </nav>
+        </motion.div>) :''}
     </div>
   )
 }
