@@ -5,8 +5,15 @@ function App() {
 
   return (
 
-      <div className='z mx-auto max-w-7xl bg-yellow border border-red-500'>
+      <div className='container mx-auto max-w-7xl'>
         <Navbar></Navbar>
+        {/* hero */}
+        {/* about */}
+        {/* projects */}
+        {/* experince */}
+        {/* testomonial */}
+        {/* contact */}
+        {/* footer  */}
       </div>
   )
 }
