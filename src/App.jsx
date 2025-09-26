@@ -1,4 +1,7 @@
+
 import './App.css'
+import Herotext from './component/Herotext'
+import Hero from './section/Hero'
 import Navbar from './section/Navbar'
 
 function App() {
@@ -7,7 +10,7 @@ function App() {
 
       <div className='container mx-auto max-w-7xl'>
         <Navbar></Navbar>
-        {/* hero */}
+        <Hero></Hero>
         {/* about */}
         {/* projects */}
         {/* experince */}
