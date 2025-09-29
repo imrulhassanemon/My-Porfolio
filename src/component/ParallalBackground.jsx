@@ -1,9 +1,9 @@
 import { useScroll, motion, useTransform } from "motion/react";
 // import { p } from "motion/react-client";
 import React from "react";
-const { scrollProgress } = useScroll();
 
 const ParallalBackground = () => {
+    const { scrollProgress } = useScroll();
   const mountain3y = useTransform(scrollProgress, [0, 0.5], ["0%", "70%"]);
   const planetsX = useTransform(scrollProgress, [0, 0.5], ["0%", "-20%"]);
   const mountain2Y = useTransform(scrollProgress, [0, 0.5], ["0%", "30%"]);
