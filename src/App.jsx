@@ -11,6 +11,10 @@ function App() {
       <div className='container mx-auto max-w-7xl'>
         <Navbar></Navbar>
         <Hero></Hero>
+        <div className="min-h-screen"></div>
+        <div className="min-h-screen"></div>
+        <div className="min-h-screen"></div>
+        <div className="min-h-screen"></div>
         {/* about */}
         {/* projects */}
         {/* experince */}
