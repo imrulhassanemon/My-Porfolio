@@ -2,7 +2,9 @@ import React from 'react';
 import Herotext from '../component/Herotext';
 import ParallalBackground from '../component/ParallalBackground';
 import { Canvas } from '@react-three/fiber';
-import Astronuts from '../component/Astronuts';
+import { Astronut } from '../component/Astronut';
+import { OrbitControls } from '@react-three/drei';
+
 
 const Hero = () => {
     return (
@@ -11,7 +13,8 @@ const Hero = () => {
             <ParallalBackground></ParallalBackground>
             <figure className='absolute inset-0 w-screen h-screen z-0'>
             <Canvas>
-                <Astronuts></Astronuts>    
+               <Astronut></Astronut>
+               <OrbitControls></OrbitControls>
             </Canvas>     
             </figure>
         </section>
